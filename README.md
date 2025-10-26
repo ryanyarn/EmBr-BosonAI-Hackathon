@@ -7,9 +7,9 @@ output has example generations
 sample holds all the reference audios and their respective transcriptions (to add your own voice it would be done here)
 dictionaries.py hosts all the dictionaries used for organization and the different scene prompting used to invoke the emotions
 best results were found using parameters of temperature = 0.8, top_p = 0.95, and top_k = 30-40
-note that the generation has aspects of randomness so the results can vary heavily, also puncutation has major influence
+note that the generation has aspects of randomness so the results can vary heavily, also puncutation has major influence (especially apostrophies)
 
-Future Developments aim to add further emotion encoding, and testing output variability based on punctuation input
+future developments aim to add further emotion encoding, test output variability based on punctuation input, implementing sarcasm as an additional tag, and implementing a system for user reference input 
 
 Created in person working and later added to github in one go,
 Created by: Ryan Qian, Kane Pan, and Gianna Fung

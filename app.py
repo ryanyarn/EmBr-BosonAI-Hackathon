@@ -14,7 +14,10 @@ st.markdown("""
     .block-container {
         max-width: 700px;
         margin: auto;
-        padding-top: 2rem;
+        padding: 2rem;
+        background-color: #1e1e1e; /* dark background */
+        color: #fff;
+        border-radius: 20px; /* rounded corners for container */
     }
 
     /* Title and subtitle */
@@ -22,35 +25,55 @@ st.markdown("""
         text-align: center;
         font-size: 2.5em;
         font-weight: 700;
-        color: #A7D8F4;
+        color: #f28c8c; /* soft red */
         margin-bottom: 0.1em;
     }
     .subtitle {
         text-align: center;
         font-size: 1.2em;
-        color: #666;
+        color: #f5c6c6; /* lighter soft red */
         margin-bottom: 2em;
     }
 
     /* Buttons */
     div.stButton > button {
         width: 100%;
-        background-color: #A7D8F4;
+        background-color: #f28c8c;
         color: white;
-        border-radius: 10px;
+        border-radius: 15px; /* rounded button corners */
         height: 3em;
         font-size: 1.1em;
         transition: 0.3s;
     }
     div.stButton > button:hover {
-        background-color: #6ABCE8;
+        background-color: #e06666;
         color: white;
     }
 
     /* Labels */
     .stSelectbox label, .stTextArea label {
         font-weight: 600;
-        color: #333;
+        color: #f5f5f5; /* light text for dark background */
+    }
+
+    /* Text area input */
+    .stTextArea textarea {
+        background-color: #2a2a2a;
+        color: #fff;
+        border-radius: 15px; /* rounded text area corners */
+        border: 1px solid #444;
+    }
+
+    /* Selectbox dropdown */
+    .stSelectbox div[role="listbox"] {
+        background-color: #2a2a2a;
+        color: #fff;
+        border-radius: 15px; /* rounded dropdown corners */
+    }
+
+    /* Optional: selectbox button itself */
+    .stSelectbox div[role="combobox"] {
+        border-radius: 15px;
     }
     </style>
 """, unsafe_allow_html=True)
